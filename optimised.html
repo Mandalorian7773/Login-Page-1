@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let users=document.getElementById('user');
+        let obj={
+            name:"Raj",
+            age:17,
+            class:"b.tech"
+        }
+        for(let key in obj){
+            let entry=document.createElement('p');
+            entry.textContent=obj[key];
+            users.appendChild(entry);
+        }
+    </script>
+</body>
+</html>
